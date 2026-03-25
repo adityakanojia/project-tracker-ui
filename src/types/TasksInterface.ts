@@ -1,9 +1,23 @@
+export enum TaskStatus {
+  todo = "todo",
+  inprogress = "inprogress",
+  inreview = "inreview",
+  done = "done",
+}
+
+export enum Priority {
+  critical = "critical",
+  high = "high",
+  medium = "medium",
+  low = "low",
+}
+
 export interface SingleTask {
-  id: string;
+  id: number;
   title: string;
-  startDate: Date;
+  startDate?: Date;
   dueDate: Date;
-  assigneeAvatar: string;
-  asignee: string;
-  status: "ToDo" | "InProgress" | "InReview" | "Done";
+  assignee: string;
+  priority: Priority;
+  status: TaskStatus;
 }

@@ -1,5 +1,5 @@
 import type { SingleTask } from "../types/TasksInterface";
-import { priority } from "../types/TasksInterface";
+import { Priority } from "../types/TasksInterface";
 import { TaskStatus } from "../types/TasksInterface";
 
 const names: string[] = [
@@ -11,7 +11,7 @@ const names: string[] = [
   "Shreyas",
 ];
 const status: TaskStatus[] = Object.values(TaskStatus);
-const Priorities: priority[] = Object.values(priority);
+const Priorities: Priority[] = Object.values(Priority);
 const title: string[] = [
   "Frontend bug fix",
   "Backend bug fix",
